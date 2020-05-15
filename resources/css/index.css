@@ -1,0 +1,567 @@
+html, body {
+    font-family: 'Futura';
+}
+
+*:focus {
+    outline: none;
+  }
+
+/* Mobile Nav Start */
+a {
+    text-decoration: none !important;
+    color: white;
+}
+
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 110vh;
+}
+
+.modal-header, .modal-body {
+    background-color: gray;
+}
+
+.modal-body {
+    margin: -5px;
+}
+
+.modal-header {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#mobile-close {
+    background: none !important;
+    border: none;
+    color: white;
+}
+
+#navbar {
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 1;
+  }
+  
+/* Mobile Nav End */
+
+
+/* Web Nav Start */
+nav {
+    background-color: rgb(47, 137, 210);
+    border-bottom: 2px solid black;
+    box-shadow: 0 2px 2px rgba(0,6,12,.5);
+   -moz-box-shadow: 0 2px 2px rgba(0,6,12,.5);
+   -webkit-box-shadow: 0 2px 2px rgba(0,6,12,.5);
+   -khtml-box-shadow: 0 2px 2px rgba(0,6,12,.5);
+}
+
+nav a {
+    color: white !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.web-nav {
+    height: 95px;
+    width: 100%;
+    font-family: 'Enriqueta';
+}
+
+.web-nav a {
+    font-size: 19px;
+}
+
+.web-nav a:hover, .modal-body a:hover {
+    color: rgb(45, 172, 176) !important;
+    transition: 0.3s linear !important;
+}
+
+.web .active {
+    color: rgb(45, 172, 176) !important;
+}
+
+.vl {
+    border-left: 2px solid black;
+    height: 40px;
+}
+
+/*Web Nav End */
+
+/* Nav Breakpoints Start */
+
+@media (max-width: 991.98px) {
+    .web {
+        display: none !important;
+    }
+
+    .mobile {
+        display: flex !important;
+    }
+
+    .active {
+        color: rgb(45, 172, 176);
+    }
+
+    .index-container {
+        margin-top: 60px;
+    }
+
+    .about {
+        margin-top: 65px;
+    }
+
+    .tour {
+        margin-top: 50px;
+    }
+
+    .services {
+        margin-top: 50px;
+    }
+
+    .faq {
+        margin-top: 30px;
+    }
+
+    .contact {
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .mobile {
+        display: none !important;
+    }
+
+    .web {
+        display: flex !important;
+    }
+ 
+    .index-container {
+        margin-top: 100px;
+    }
+
+    .about {
+        margin-top: 120px;
+    }
+
+    .tour {
+        margin-top: 100px;
+    }
+
+    .services {
+        margin-top: 120px;
+    }
+
+    .faq {
+        margin-top: 80px;
+    }
+
+    .contact {
+        margin-top: 120px;
+    }
+}
+
+/*Nav Breakpoints End */
+
+/* Multi-Page CSS Start */
+
+@font-face {
+    font-family: 'Enriqueta';
+    font-weight: 100;
+    src: url('./Enriqueta\ Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Futura';
+    font-weight: 100;
+    src: url('./futura\ book\ font.ttf');
+  }
+
+.hide {
+    display: none;
+}
+
+.align-items-center {
+    display: flex; 
+    align-items: center;  /*Aligns vertically center */
+    justify-content: center; /*Aligns horizontally center */
+  }
+
+/* Multi-Page CSS End */
+
+/*Index CSS Start */
+
+  .logo {
+    width: 336px;
+    height: 210px;
+}
+
+@media (max-width: 767.98px) {
+    .index-container h3 {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-top: -45px;
+    }
+
+    .conditions {
+        margin-top: -10px
+    }
+
+    .physicals-supplements h5 {
+        font-size: 15px;
+    }
+
+    .social {
+        display: none !important;
+    }
+
+    .mobile-footer {
+        display: flex;
+    }
+
+    .web-footer {
+        display: none !important;
+    }
+}
+
+.index-container h4 {
+    border: 3px solid rgb(47, 137, 210);
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+@media (min-width: 768px) {
+    .index-container .banner {
+        border-bottom: 3px solid grey;
+    }
+
+    .mobile-footer {
+        display: none !important;
+    }
+
+    .web-footer {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    .index-container .banner {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1027.98px) {
+    .physicals-supplements h5 {
+        font-size: 17px;
+    }
+}
+
+.physicals-supplements h5 {
+    line-height: 1.8;
+}
+
+.social h2 {
+    font-size: 46px;
+    color: #D4D4D4;
+}
+
+.social .col-md-4 {
+    height: 360px;
+    display: block;
+    padding-top: 130px;
+}
+
+.social a {
+    font-size: 25px;
+}
+
+.social img {
+    width: 66px;
+    height: 66px;
+}
+
+.social .facebook {
+    background-color: rgb(61, 155, 233);
+}
+
+.social .e-mail {
+    background-color: rgb(240, 240, 240);
+}
+
+.social .e-mail a {
+    color: black;
+}
+
+.social .instagram {
+    background-color: rgb(210, 222, 227);
+}
+
+/*Index CSS End */
+
+/*About CSS Start */
+
+.about img {
+    width: 100%;
+    height: 289px;
+}
+
+.about p {
+    font-size: 24px;
+}
+
+@media (max-width: 767.98px) {
+    .about p, .about ul li {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+.about li {
+    font-size: 24px;
+}
+
+/*About CSS End */
+
+
+/*Contact CSS Start */
+
+iframe {
+    width: 100%;
+}
+
+.required {
+    color: red;
+}
+
+.contact-container .card {
+    border: 2px solid black !important;
+}
+
+.contact p, .contact h6 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact p {
+    color: rgb(47, 137, 210) !important;
+}
+
+.contact .directions {
+    font-size: 15px;
+}
+
+.contact-container h3, .contact-container h5, .contact-container select option {
+    font-weight: bold;
+    color: black;
+}
+
+.contact-container textarea {
+    min-height: 150px;
+    border: 2px solid black !important;
+}
+
+.contact-container button {
+    color: black !important;
+    font-weight: bold;
+    border: 2px solid black !important;
+}
+
+.contact-container button:hover {
+    color: white !important;
+    background-color: rgb(47, 137, 210);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.form-control {
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+/*Contact CSS End */
+
+
+/*FAQ CSS Start */
+
+.faq h4 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.faq p {
+    font-size: 16px;
+}
+
+/*FAQ CSS End */
+
+
+/*Services / Pricing CSS Start */
+
+
+
+.services h6 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.services p {
+    font-size: 14px;
+}
+
+.services img {
+    width: 100%;
+}
+
+.border-top {
+    border-top: 5px solid gray !important;
+}
+
+.payment {
+    font-weight: bold;
+}
+
+.payment h6 {
+    font-size: 19px;
+}
+
+.payment p {
+    font-size: 15px;
+}
+
+/*Services / Pricing CSS End */
+
+/*Touring The Office CSS Start */
+
+.tour h4 {
+    font-family: Futura;
+}
+
+.tour img {
+    width: 100%;
+}
+
+/*Touring The Office CSS End */
+
+/*Testimonials CSS Start*/
+ 
+  .article .align-items-center {
+    
+    width: 100%; 
+    height: 100vh;
+  }
+
+  .carousel-reviews-info {
+    width: 100%;
+    font-size: 16px;
+    height: auto;
+    min-height: 300px;
+
+}
+
+.carousel-reviews-info p {
+  font-size: 18px;
+  color: black;
+}
+
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .7s;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+
+@media (min-width: 319.98px) and (max-height: 375px) { 
+    
+    .carousel-reviews-info {
+        width: 100%;
+        font-size: 16px;
+        height: auto;
+        min-height: 300px;
+    }
+  }
+
+  @media (max-width: 575.98px) { 
+       
+     .carousel-reviews-info {
+       font-size: 16px;
+       height: auto;
+       min-height: 420px;
+     }
+   }
+
+/*Testimonials CSS End */
+
+/*Footer Start */
+
+footer {
+    font-weight: bold;
+    color: rgb(47, 137, 210);
+}
+
+footer .vl {
+    border-left: 1px solid rgb(47, 137, 210);
+    height: 40px;
+}
+
+footer a {
+    color: rgb(47, 137, 210);
+}
+
+footer img {
+    width: 39px;
+    height: 39px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer .credit {
+    font-size: 12px;
+}
+/*Footer End */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+   
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+   
+}
